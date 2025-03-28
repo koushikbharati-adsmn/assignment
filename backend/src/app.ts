@@ -11,7 +11,7 @@ const corsOptions: CorsOptions = {
   allowedHeaders: ["Authorization", "Content-Type"],
 };
 
-export const app = express();
+const app = express();
 
 app.use(cors(corsOptions));
 app.use(express.json());
@@ -22,3 +22,5 @@ app.use("/api/workflow", workflowRoutes);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+export default app;
