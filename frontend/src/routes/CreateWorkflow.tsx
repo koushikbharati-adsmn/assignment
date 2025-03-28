@@ -53,6 +53,8 @@ export default function CreateWorkflow() {
 
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes)
 
+  console.log(setNodes)
+
   return (
     <div style={{ width: '100dvw', height: '100dvh', position: 'relative' }}>
       <div className='absolute top-4 left-4 z-10 flex items-center justify-center gap-6 rounded-md border bg-white px-4 py-2 shadow-sm'>
