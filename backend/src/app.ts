@@ -2,8 +2,8 @@ import express from "express";
 import "dotenv/config";
 import cors, { CorsOptions } from "cors";
 
-import authRoutes from "@/routes/auth.Routes";
-import workflowRoutes from "@/routes/workflow.Routes";
+import authRoutes from "./routes/auth.Routes";
+import workflowRoutes from "./routes/workflow.Routes";
 
 const corsOptions: CorsOptions = {
   origin: "*",

@@ -1,15 +1,14 @@
-import { Request, Response } from "express";
+import { Response } from "express";
 import {
   AuthenticatedRequest,
   CreateWorkflowParams,
-  DeleteWorkspaceParams,
   SearchWorkflowsParams,
-} from "@/types/requests";
-import { createResponse } from "@/utils/createResponse";
-import { createNewWorkflow } from "@/services/workflow/createWorkflow";
-import { fetchUserWorkflows } from "@/services/workflow/fetchWorkflows";
-import { deleteWorkflow } from "@/services/workflow/deleteWorkflow";
-import { updateWorkflowPinStatus } from "@/services/workflow/updateWorkflowPinStatus";
+} from "../types/requests";
+import { createResponse } from "../utils/createResponse";
+import { createNewWorkflow } from "../services/workflow/createWorkflow";
+import { fetchUserWorkflows } from "../services/workflow/fetchWorkflows";
+import { deleteWorkflow } from "../services/workflow/deleteWorkflow";
+import { updateWorkflowPinStatus } from "../services/workflow/updateWorkflowPinStatus";
 
 export const createWorkflowController = async (
   req: AuthenticatedRequest<{}, {}, CreateWorkflowParams>,

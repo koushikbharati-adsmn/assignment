@@ -1,4 +1,4 @@
-import { supabase } from "@/configs/supabaseClient";
+import { supabase } from "../../configs/supabaseClient";
 
 export const updateWorkflowPinStatus = async (
   user_id: number,

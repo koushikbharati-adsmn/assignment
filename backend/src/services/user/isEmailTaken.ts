@@ -1,4 +1,4 @@
-import { supabase } from "@/configs/supabaseClient";
+import { supabase } from "../../configs/supabaseClient";
 
 export const isEmailTaken = async (email: string): Promise<boolean> => {
   const { data: users, error } = await supabase

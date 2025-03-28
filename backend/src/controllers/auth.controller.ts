@@ -1,10 +1,10 @@
-import { createUser } from "@/services/user/createNewUser";
-import { fetchUserByEmail } from "@/services/user/fetchUserByEmail";
-import { isEmailTaken } from "@/services/user/isEmailTaken";
-import { LoginParams, SignupParams } from "@/types/requests";
-import { createResponse } from "@/utils/createResponse";
-import { hashPassword, verifyPassword } from "@/utils/passwordUtils";
-import { generateToken } from "@/utils/tokenUtils";
+import { createUser } from "../services/user/createNewUser";
+import { fetchUserByEmail } from "../services/user/fetchUserByEmail";
+import { isEmailTaken } from "../services/user/isEmailTaken";
+import { LoginParams, SignupParams } from "../types/requests";
+import { createResponse } from "../utils/createResponse";
+import { hashPassword, verifyPassword } from "../utils/passwordUtils";
+import { generateToken } from "../utils/tokenUtils";
 import { Request, Response } from "express";
 
 export const signupController = async (

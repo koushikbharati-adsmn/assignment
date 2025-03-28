@@ -1,4 +1,4 @@
-import { supabase } from "@/configs/supabaseClient";
+import { supabase } from "../../configs/supabaseClient";
 
 export const deleteWorkflow = async (id: number) => {
   const { error } = await supabase.from("workflows").delete().eq("id", id);

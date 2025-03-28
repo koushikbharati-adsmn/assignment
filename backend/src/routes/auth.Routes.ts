@@ -1,7 +1,7 @@
 import {
   loginController,
   signupController,
-} from "@/controllers/auth.controller";
+} from "../controllers/auth.controller";
 import { Router } from "express";
 
 const router = Router();

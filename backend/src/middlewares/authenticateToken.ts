@@ -1,7 +1,7 @@
 import { Response, NextFunction } from "express";
-import { createResponse } from "@/utils/createResponse";
-import { verifyToken } from "@/utils/tokenUtils";
-import { AuthenticatedRequest } from "@/types/requests";
+import { createResponse } from "../utils/createResponse";
+import { verifyToken } from "../utils/tokenUtils";
+import { AuthenticatedRequest } from "../types/requests";
 
 export const verifyAuthToken = (
   req: AuthenticatedRequest,

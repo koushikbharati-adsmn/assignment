@@ -1,4 +1,4 @@
-import { supabase } from "@/configs/supabaseClient";
+import { supabase } from "../../configs/supabaseClient";
 
 export const createUser = async (user: {
   name: string;

@@ -4,8 +4,8 @@ import {
   deleteWorkflowController,
   getWorkflowsController,
   pinWorkflowController,
-} from "@/controllers/workflow.controller";
-import { verifyAuthToken } from "@/middlewares/authenticateToken";
+} from "../controllers/workflow.controller";
+import { verifyAuthToken } from "../middlewares/authenticateToken";
 
 const router = Router();
 

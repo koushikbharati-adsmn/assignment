@@ -1,4 +1,4 @@
-import { ApiResponse } from "@/types/response";
+import { ApiResponse } from "../types/response";
 
 export const createResponse = <T>(
   success: boolean,
